@@ -37,11 +37,11 @@
 <body>
 
   <div class="count" id="counter">0 / 100</div>
-  <button id="tapBtn">タップして解読を進める</button>
+  <button id="tapBtn">tap!</button>
 
   <script>
     let count = 0;
-    const target = 100;
+    const target = 300;
     const counterEl = document.getElementById('counter');
     const btnEl = document.getElementById('tapBtn');
 
@@ -50,7 +50,7 @@
       counterEl.textContent = `${count} / ${target}`;
 
       // 90回を超えたら煽る
-      if (count === 90) {
+      if (count === 280) {
         btnEl.textContent = "are you seriously going to do it?";
       }
 
