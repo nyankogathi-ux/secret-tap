@@ -36,8 +36,8 @@
 </head>
 <body>
 
-  <div class="count" id="counter">0 / 100</div>
-  <button id="tapBtn">tap!</button>
+  <div class="count" id="counter">0 / 300</div>
+  <button id="tapBtn">tap like crazy!</button>
 
   <script>
     let count = 0;
@@ -49,12 +49,12 @@
       count++;
       counterEl.textContent = `${count} / ${target}`;
 
-      // 90回を超えたら煽る
+      // 280回を超えたら煽る
       if (count === 280) {
         btnEl.textContent = "are you seriously going to do it?";
       }
 
-      // 100回に達したらリックロールへ飛ばす
+      // 300回に達したらリックロールへ飛ばす
       if (count >= target) {
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
       }
